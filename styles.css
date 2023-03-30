@@ -1,0 +1,61 @@
+body {
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+}
+
+div.card {
+    margin:0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:darkcyan;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 10px solid blueviolet;
+    text-align: center;
+    font-style: italic;
+    animation-name: moveBorderBottomBack;
+    animation-duration: 1.5s;
+}
+
+
+div.writing {
+    display: block;
+    margin-left: 20px;
+}
+
+
+.avatar:hover {
+    border-color: brown;
+}
+
+.card:hover {
+    border-color: brown;
+    animation-name: moveBorderBottom;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes moveBorderBottom {
+    from {border-bottom: 10px solid blueviolet;}
+    to {border-bottom: 10px solid brown;}
+  }
+
+@keyframes moveBorderBottomBack {
+    from {border-bottom: 10px solid brown;}
+    to {border-bottom: 10px solid blueviolet;}
+  }
+  
+/*
+Challenge:
+1. Give the card div a class (name it "card")
+2. Select the card class and give it a dotted blue border
+3. Add 20 pixels of padding on all sides of the card
+*/
